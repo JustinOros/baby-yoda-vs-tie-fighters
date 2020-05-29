@@ -19,10 +19,8 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste the repository URL and click import
 
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## Game preview
+* open https://makecode.com/_5Jw03FhVAKa3
 
 ![A rendered view of the blocks](baby-yoda-vs-tie-fighters.png)
 
