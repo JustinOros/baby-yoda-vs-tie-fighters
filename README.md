@@ -11,16 +11,8 @@ This repository can be added as an **extension** in MakeCode.
 * click on **Extensions** under the gearwheel menu
 * search for the URL of this repository and import
 
-## Edit this extension
-
-To edit this repository in MakeCode.
-
-* open https://arcade.makecode.com/
-* click on **Import** then click on **Import URL**
-* paste the repository URL and click import
-
 ## Game preview
-* open https://makecode.com/_5Jw03FhVAKa3
+* open https://arcade.makecode.com/55093-39184-45354-26470
 
 ![A rendered view of the blocks](baby-yoda-vs-tie-fighters.png)
 
