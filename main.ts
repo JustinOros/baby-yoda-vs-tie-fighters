@@ -2,6 +2,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     otherSprite.destroy()
     sprite.destroy(effects.fire, 100)
     info.changeScoreBy(1)
+    music.pewPew.play()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     bullet = sprites.createProjectileFromSprite(img`
@@ -14,6 +15,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     info.changeLifeBy(-1)
+    music.playMelody("C5 C - - - - - - ", 1000)
 })
 let bogey: Sprite = null
 let bullet: Sprite = null
@@ -39,6 +41,9 @@ b b d b b b b b b b b b b b b b
 babyYoda.setFlag(SpriteFlag.StayInScreen, true)
 info.setLife(3)
 controller.moveSprite(babyYoda, 200, 200)
+music.playMelody("G F E C5 C5 C5 G G ", 500)
+music.playMelody("G F E C5 C5 C5 G G ", 500)
+music.playMelody("E F C C C - - - ", 400)
 game.onUpdateInterval(500, function () {
     bogey = sprites.create(img`
 . . . . . . . . . . . . . . . . 
